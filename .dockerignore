@@ -1,0 +1,26 @@
+# Wild
+*.log
+*.tmp
+*.bak
+*.bck
+
+# Files
+Dockerfile
+
+# Folders
+.git
+.vscode
+.idea
+.npm
+node_modules
+
+## Local config files
+.dockerignore
+.env
+.env.*
+
+# OS and IDE files
+.DS_Store
+
+## Markdown stuff
+*.md
