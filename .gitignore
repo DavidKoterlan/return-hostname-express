@@ -1,0 +1,24 @@
+# OS and IDE files
+.DS_Store
+
+# Node.js
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Environment variables file
+.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# Package-lock files
+package-lock.json
+yarn.lock
