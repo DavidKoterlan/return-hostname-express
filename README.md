@@ -24,7 +24,7 @@ cd return-hostname-express-app
 ```bash
 docker build --tag return-hostname-express-app:1.0.0 .
 ```
-This command will build a docker image with the repository name: return-hostname-express-app and tag 1.0.0
+This command will build a docker image with the repository name: return-hostname-express-app and tag 1.0.0.
 
 3. Run the container:
 ```bash
@@ -33,7 +33,8 @@ docker run --rm -p 127.0.0.1:8080:8080 -d return-hostname-express-app:1.0.0
 This command will run a container based on the image created in the previous step and will map the port 8080 on the local machine to the container's port 8080, where the application is running.
 
 4. Test the application:
-To test the application, use the following command:
+
+Run the following command:
 ```bash
 curl http://127.0.0.1:8080
 ```
