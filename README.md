@@ -6,6 +6,7 @@ This project contains a simple Node.js application built with Express that retur
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#Installation)
+- [Cleanup](#Cleanup)
 
 ## Features
 - Returns the hostname for test purposes. When a request is made to the root URL (/), the server responds with the hostname of the server machine obtained using the os module.
@@ -28,7 +29,7 @@ This command will build a docker image with the repository name: return-hostname
 
 3. Run the container:
 ```bash
-docker run --rm -p 127.0.0.1:8080:8080 -d return-hostname-express-app:1.0.0
+docker run --rm -p 127.0.0.1:8080:8080 -d --name return-hostname-express-app-test-container return-hostname-express-app:1.0.0
 ```
 This command will run a container based on the image created in the previous step and will map the port 8080 on the local machine to the container's port 8080, where the application is running.
 
@@ -41,3 +42,11 @@ curl http://127.0.0.1:8080
 Or open the following url in your browser: http://127.0.0.1:8080
 
 You should see the following output: `Hostname: <ID of the container>`. (ID of the container is the actual hostname of the container)
+
+## Cleanup
+
+After finish testing run the following commands to cleanup:
+```bash
+docker stop return-hostname-express-app-test-container
+docker image rm return-hostname-express-app:1.0.0
+```
