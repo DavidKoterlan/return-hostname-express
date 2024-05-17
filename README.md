@@ -19,7 +19,7 @@ This project contains a simple Node.js application built with Express that retur
 1. Clone the repository to your local machine:
 ```bash
 git clone https://github.com/DavidKoterlan/return-hostname-express.git
-cd return-hostname-express-app
+cd return-hostname-express
 ```
 2. Build the docker image:
 ```bash
