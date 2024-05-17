@@ -38,6 +38,6 @@ Run the following command:
 ```bash
 curl http://127.0.0.1:8080
 ```
-Or open the url following url in your browser: http://127.0.0.1:8080
+Or open the following url in your browser: http://127.0.0.1:8080
 
 You should see the following output: `Hostname: <ID of the container>` (<ID of the container> is the actual hostname of the container.) 
